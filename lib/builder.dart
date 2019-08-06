@@ -5,8 +5,6 @@ import 'package:build/build.dart';
 import 'package:code_excerpter/src/util/line.dart';
 import 'package:code_excerpter/src/excerpter.dart';
 
-print('builder');
-
 Builder builder(BuilderOptions options) => new CodeExcerptBuilder(options);
 
 class CodeExcerptBuilder implements Builder {
@@ -18,6 +16,7 @@ class CodeExcerptBuilder implements Builder {
 
   @override
   Future<void> build(BuildStep buildStep) async {
+    print('-----------> builder');
     AssetId assetId = buildStep.inputId;
     if (assetId.package.startsWith(r'$') || assetId.path.endsWith(r'$')) return;
 
