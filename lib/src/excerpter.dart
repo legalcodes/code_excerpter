@@ -9,6 +9,8 @@ const fullFileKey = '\u0000';
 const defaultRegionKey = '';
 const defaultPlaster = '···';
 
+print('excerpter');
+
 Map<String, List<String>> newExcerptsMap() => new Map();
 
 class Excerpter {
