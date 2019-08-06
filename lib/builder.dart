@@ -5,6 +5,8 @@ import 'package:build/build.dart';
 import 'package:code_excerpter/src/util/line.dart';
 import 'package:code_excerpter/src/excerpter.dart';
 
+print('builder');
+
 Builder builder(BuilderOptions options) => new CodeExcerptBuilder(options);
 
 class CodeExcerptBuilder implements Builder {
